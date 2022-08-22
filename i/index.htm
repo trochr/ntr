@@ -1,1 +1,16 @@
-ok noice
+<html>
+    <head>
+        <title>NTR Redirection...</title>
+    </head>
+    <body>
+        Redirecting in a sec...
+        <script>
+            window.onload = function () {
+                var URLStart = "https://trochr.github.io/Nes-Tetris-Replay/";
+                var level = document.URL.split("?")[1].split(",")[0];
+                var base64 = document.URL.split("?")[1].split(",")[1];            
+                location.assign(URLStart+'?sl='+level+'&r='+base64);
+            }
+        </script>
+    </body>
+</html>
