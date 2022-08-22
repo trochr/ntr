@@ -6,10 +6,13 @@
         Redirecting in a sec...
         <script>
             window.onload = function () {
-                var URLStart = "https://trochr.github.io/Nes-Tetris-Replay/";
-                var level = document.URL.split("?")[1].split(",")[0];
-                var base64 = document.URL.split("?")[1].split(",")[1];            
-                location.assign(URLStart+'?sl='+level+'&r='+base64);
+                //code before the pause
+                setTimeout(function(){
+                    var URLStart = "https://trochr.github.io/Nes-Tetris-Replay/";
+                    var level = document.URL.split("?")[1].split(",")[0];
+                    var base64 = document.URL.split("?")[1].split(",")[1];            
+                    location.assign(URLStart+'?sl='+level+'&r='+base64);
+                }, 2000);
             }
         </script>
     </body>
